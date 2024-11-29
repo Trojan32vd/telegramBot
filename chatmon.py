@@ -13,7 +13,9 @@ from asyncio import create_task
 api_id = 25103058  # Changed to int
 api_hash = '527090194b3e9c5ea0a7ce111080f707'
 phone_number = '+393202858868'
-CHANNEL_ID = 'trading1001off'
+#CHANNEL_ID = 'trading1001off'
+CHANNEL_ID = 'testingbot1998'
+
 SESSION_FILE = 'session_name.session'
 
 # Global flag for shutdown
@@ -211,7 +213,7 @@ def check_f10():
         asyncio.sleep(0.1)
 
 # Create the Telegram client
-client = TelegramClient('session_name', api_id, api_hash)
+client = TelegramClient('session_name22', api_id, api_hash)
 
 @client.on(events.NewMessage(chats=CHANNEL_ID))
 async def handle_new_message(event):
