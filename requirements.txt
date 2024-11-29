@@ -1,0 +1,2 @@
+keyboard==0.13.5
+Telethon==1.38.1
